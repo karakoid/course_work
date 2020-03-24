@@ -6,6 +6,6 @@
 
 ### 2nd week
 * Optimal control problem theory:
-- Classification
-- Simplest OCP
-- OCP solving algorithm
+  * Classification
+  * Simplest OCP
+  * OCP solving algorithm
