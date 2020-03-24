@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.9)  17 MAR 2020 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.9)  24 MAR 2020 19:23
 entering extended mode
 **./CourseWork.tex
 (CourseWork.tex
@@ -748,22 +748,22 @@ LaTeX Warning: Label `Kryazhimski' multiply defined.
 )
 \openout1 = `CourseWork.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
  (D:\miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count290
@@ -813,7 +813,7 @@ LaTeX Font Info:    ... okay on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Overfull \hbox (28.45271pt too wide) in paragraph at lines 23--23
+Overfull \hbox (28.45271pt too wide) in paragraph at lines 24--24
 []| [] 
  []
 
@@ -826,12 +826,12 @@ Overfull \hbox (7.9181pt too wide) detected at line 5
  []
 
 
-Overfull \hbox (7.9181pt too wide) detected at line 9
+Overfull \hbox (7.9181pt too wide) detected at line 12
 \T2A/cmr/bx/n/14.4 2 
  []
 
 
-Overfull \hbox (7.9181pt too wide) detected at line 12
+Overfull \hbox (7.9181pt too wide) detected at line 15
 \T2A/cmr/bx/n/14.4 3 
  []
 
@@ -860,27 +860,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: Reference `sys2' on page 5 undefined on input line 17.
 
-) (chapter2.tex [5
+[5
 
-] [6]
+] [6] [7] [8]) (chapter2.tex [9]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-) (chapter3.tex [7
+) (chapter3.tex [10
 
 ]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-) (conclusions.tex [8
+) (conclusions.tex [11
 
-]) (bibliography.tex [9
+]) (bibliography.tex [12
 
-] [10
+] [13
 
-] [11]
+] [14]
 Underfull \hbox (badness 1163) in paragraph at lines 88--93
 []\T2A/cmr/m/n/14.4 Кириллова, Ф.М. Син-тез оп-ти-маль-ных си-стем -- оп-ти-мал
 ь-ное
  []
 
-[12]
+[15]
 Underfull \hbox (badness 7064) in paragraph at lines 160--162
 []\T2A/cmr/m/n/14.4 Karmarkar, N. A new polynomial-time algorithm for linear
  []
@@ -891,7 +891,7 @@ Underfull \hbox (badness 2343) in paragraph at lines 176--178
 l of
  []
 
-[13]) [14] (CourseWork.aux)
+[16]) [17] (CourseWork.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -900,23 +900,27 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15490 strings out of 481556
- 284659 string characters out of 2932035
- 522277 words of memory out of 3000000
- 30406 multiletter control sequences out of 15000+200000
- 538186 words of font info for 39 fonts, out of 3000000 for 9000
+ 15499 strings out of 481556
+ 284811 string characters out of 2932035
+ 523319 words of memory out of 3000000
+ 30414 multiletter control sequences out of 15000+200000
+ 538527 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,5n,64p,1048b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-rm1440.pk> <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\labx1728.pk> <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
-lh-t2a/dpi600\labx1440.pk><D:/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<D:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<D:/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on CourseWork.pdf (14 pages, 154251 bytes).
+ 68i,12n,64p,1048b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1440.pk> <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\larm1440.pk> <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\labx1728.pk> <C:\Users\37544\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\labx1440.pk><D:/miktex/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/miktex/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><D:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on CourseWork.pdf (17 pages, 204840 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
+ 374 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

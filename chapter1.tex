@@ -29,6 +29,141 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\subsection{Классификация задач оптимального управления}
+\label{OCP:Classification}
+
+
+Задачи оптимального управления классифицируются по следующим составляющим:
+\begin{itemize}
+
+	\item Промежуток времени и управления.\par
+	Промежуток времени в ЗОУ может быть:					
+		\begin{itemize}
+			\item непрерывным ($ t \in \mathbb{R} $),
+			\item дискретным ($ k \in \mathbb{Z_+} $).
+		\end{itemize} \par
+	Промежуток управления: \par
+		\begin{itemize}
+			\item конечным ($ t \in [t_0, t_f],\; t_0 < t_f $),
+			\item бесконечным ($ t \in [t_0, +\infty) $).
+		\end{itemize}
+	Время окончания процесса: \par
+		\begin{itemize}
+			\item фиксированным ($ t_f $ заданно),
+			\item не фиксированным ($ t_f $ не заданно).
+		\end{itemize}
+		
+	\item Математическая модель объекта управления. \par
+	Будем рассматривать объекты управления, которые можно описать обыкновенными 		дифференциальными уравнениями: 
+		\begin{equation}
+			\dot x = f(x, U, t)
+		\end{equation}, где
+		$ x = x(t) \in \mathbb{R}^n $ - состояние системы,
+		$ u = u(t) \in \mathbb{R}^r $ - управление
+		
+	\item Классы управлений и ограничение на управление. \par
+	Классы управлений: \par
+		\begin{itemize}
+			\item кусочно-непрерывные функции,
+			\item измеримые функции,
+			\item дискретные функции,
+			\item релейные функции,
+			\item инерционные функции,
+			\item ...
+		\end{itemize} \par
+	
+	Ограничение на управление: \par
+	$ u(t) \in U(t),\; t \in [t_0, t_f] $, где $ U(t) \subseteq \mathbb{R}^n $.
+	
+	\item Ограничения на траекторию. \par
+	В общем виде ограничения на траекторию имеют вид:
+		\begin{equation}
+			x \in \mathbb{X}(t),\; t \in [t_0, t_f]
+		\end{equation}
+	Ограничения на траекторию могут накладываться: \par
+		\begin{itemize}
+			\item на правом конце траектории (терминальные ограничения), т.е.
+			$ x(t_f) \in \mathbb{X}_f $, откуда могут вытекать задачи с 						закрепленным, свободным и подвижным правым концом траектории;
+			\item на левом конце траектории, т.е. $ x(t_0) \in \mathbb{X}_0 $,
+			откуда также могут вытекать задачи с закрепленным, свободным и 						подвижным концом траектории;
+			\item в промежуточные моменты времени, т.е.
+			$ x(t_i) \in \mathbb{X}_i,\; t_i \in [t_0, t_f],\; i = 1, ... , l $,
+			при этом $ t_0 < t_1 < ... < t_l < t_f $.
+		\end{itemize}
+	Существуют и смешанные ограничения на траекторию.
+	
+	\item Критерий качества.
+		\begin{itemize}
+			\item Терминальный критерий (критерий качества типа Майера)\par
+				$ J(u)=\varphi(x(t_f)),\;
+				\varphi: \mathbb{R}^n \longrightarrow \mathbb{R} $;
+			\item Интегральный критерий (критерий качества типа Лагранжа) \par
+				$ J(u)=\int_{t_0}^{t_f}f_0(x(t), u(t), t)dt,
+				\;f_0: \mathbb{R}^n \times \mathbb{R}^r \times \mathbb{R} 							\longrightarrow \mathbb{R} $
+			\item Критерий качества типа Больца \par
+				$ J(u)=\varphi(x(t_f)) + \int_{t_0}^{t_f}f_0(x(t),u(t),t)dt $
+			\item Критерий быстродействия \par
+				$ J(u)=t_f - t_0 \longrightarrow min $
+		\end{itemize}
+	
+\end{itemize}
+
+
+\subsection{Простейшая задача оптимального управления}
+\label{OCP:Simplest OCP}
+
+
+Рассмотрим простейшую задачу оптимального управления на промежутке времени
+$ [t_0, t_f] $ в классе кусочно-непрерывных управлений: \par
+\begin{align}
+	&J(u)=\varphi(x(t_f)) \longrightarrow min \\
+	&\dot x = f(x, u, t),\; x(t_0) = x_0  \\
+	&u(t) \in \mathbb{U},\; t \in [t_0, t_f]
+\end{align}
+В задаче (номер откуда до куда) необходимо минимизировать критерий типа Майера (номер) на траектории нелинейной системы (номер) с ограничениями на управление (номер).
+
+
+\subsection{Алгоритм решения задач оптимального управления с помощью принципа максимума}
+\label{OCP:Maximum Principle}
+
+
+Алгоритм решения задачи оптимального управления (номер-номер) из предыдущего пункта состоит из: \par
+\begin{itemize}
+	\item составления гамильтониана \par
+		\begin{equation}
+			H(x, u, \psi, t) = \psi'f(x, u, t)
+		\end{equation}, где $ \psi = \psi(t) \in \mathbb{R}^n $
+	\item записи сопряженной системы и условия трансверсальности
+		\begin{align}
+			&\dot \psi = -\frac{\partial H(x, u, \psi, t)}{\partial x} \\
+			&\psi (t_f) = -\frac{\partial \varphi (x(t_f))}{\partial x}
+		\end{align}
+	\item условия максимума гамильтониана
+		\begin{equation}
+			H(x^0(t), \psi^0(t), u^0(t), t) = \max_{u \in \mathbb{U}} 							H(x^0(t), \psi^0(t), u(t), t),\; t \in [t_0, t_f]
+		\end{equation}
+	\item рассмотрения задачи максимума гамильтониана
+		\begin{equation}
+			H(x, \psi, u, t) \longrightarrow max
+		\end{equation}, где $ x, \psi, t $ предполагаются фиксированными.
+	\item результата решения предыдущего пункта
+		\begin{equation}
+			u(x, \psi, t) = arg \max_{u \in \mathbb{U}} H(x, \psi, u, t)
+		\end{equation}
+	\item подстановки результата в прямую и сопряженную систему
+		\begin{align}
+			&\dot x = f(x, u(x, \psi, t), t) \\
+			&\dot \psi = -\frac{\partial H(x, \psi, u(x, \psi, t), t)}							{\partial x} \\
+			&x(t_0) = x_0,\;
+				\psi(t_f) = -\frac{\partial \varphi (x(t_f))}{\partial x}
+		\end{align}
+	\item решения краевой задачи принципа максимума (номер - номер)
+		\begin{align}
+			&x(t), \psi (t),\; t \in [t_0, t_f] \\
+			&u(t) = u(x(t), \psi (t), t),\; t \in [t_0, t_f]
+		\end{align}
+\end{itemize}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Численные методы решения задач оптимального управления и программные средства}
