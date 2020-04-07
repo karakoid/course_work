@@ -9,3 +9,11 @@
   * Classification
   * Simplest OCP
   * OCP solving algorithm
+
+### 3rd and 4th week
+* MPC:
+ * Predictive model
+ * Constraints
+ * Quality criteria (cost function)
+ * Basic MPC wording
+ * Basic MPC algorithm
